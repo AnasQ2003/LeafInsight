@@ -191,22 +191,41 @@ To run the full-stack LeafInsight application locally, follow the steps below:
 
 ## 📄 License
 
-This Final Year Project codebase is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+```
+MIT License
+
+Copyright (c) LeafInsight---2026 AnasQ2003
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+```
 
 ---
 
-## 👨‍💻 Project Team & Authors
+## 👨‍💻 Author
 
-- **Anas Ahmed Qureshi** — [@AnasQ2003](https://github.com/AnasQ2003)
-- **Abdul Samad**
-- **Shalal Bakhtiar**
-
-*Final Year Project (FYP) Submission — BS Computer Science*
+**Anas Ahmed Qureshi** — [@AnasQ2003](https://github.com/AnasQ2003)
 
 ---
 
 <div align="center">
-  <p>Built with ❤️ using <strong>React Native, FastAPI, TensorFlow & OpenAI</strong></p>
 
-  **⭐ If this research project was helpful, please star the repository!**
+Built with ❤️ by **Anas**
+
+Made with 🔥 and a lot of ☕
+
+**⭐ If you found this useful, please star the repository!**
+
 </div>
+
