@@ -1,22 +1,212 @@
-# LeafInsight
-LEAFINSIGHT: A SMART DETECTION OF VEGETABLE DISEASES USING DEEP VISION
-In the modern agricultural world, early detection of plant diseases is critical for 
-growing healthy crop and reducing losses. Old and traditional methods to identify a 
-plant disease are often time consuming and requires a expert knowledge, which makes 
-them less accessible to regular farmers and people. This project focuses on the 
-development of a mobile based disease detection system that uses an advanced deep 
-vision techniques to accurately identify diseases in vegetable plants very specifically 
-Potato, Tomato, and Bell Pepper (Capsicum) crops. This system focuses on key leaf 
-diseases, including Late Blight and Early Blight of Potatoes, Tomato Mosaic Virus of 
-Tomatoes, and Bacterial Spot of Bell Peppers. We studied various Convolutional 
-Neural Network (CNN) architectures, like MobileNetV2, VGG16, ResNet50, 
-EfficientNetB0, and InceptionV2 to select model that is suitable for our project and 
-gain good knowledge about the overall model accuracy, efficiency, and behaviour. 
-This deep analysis significantly contributed to our understanding of machine learning 
-and deep vision techniques. Based on our findings, we used MobileNetV2 model 
-which is suitable for mobile application. Our model achieved an accuracy of 95.5%. 
-This allows plant disease detection from many different Environmental conditions. 
-This model communicates with the custom mobile application we developed through 
-fastAPI, which allows users to scan plant leaves for diseases using their smartphone 
-cameras. The mobile app, along with the FastAPI based backend, is deployed on a 
-cloud service to make sure smooth, reliable, and efficient system performance.  
+# 🌿 LeafInsight: Smart Detection of Vegetable Diseases using Deep Vision
+
+> An end-to-end, deep learning-powered mobile application that detects leaf diseases in vegetable crops (Potato, Tomato, and Bell Pepper) with a 95.5% accurate MobileNetV2 model, coupled with a FastAPI backend and GPT-4o Generative AI advice in English and Urdu.
+
+🎬 **Watch the Project Demonstration Video:** [Google Drive Demo Video Link](https://drive.google.com/file/d/1VALiZEMeCaDllaFSyt0wOSRRQzzVTlJj/view?usp=drive_link)
+
+[![React Native](https://img.shields.io/badge/React_Native-v0.72-61DAFB.svg?style=flat-square&logo=react)](https://reactnative.dev/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-v0.100+-009688.svg?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-FF6F00.svg?style=flat-square&logo=tensorflow)](https://www.tensorflow.org/)
+[![OpenAI GPT-4o](https://img.shields.io/badge/OpenAI-GPT--4o-412991.svg?style=flat-square&logo=openai)](https://openai.com/)
+[![Strapi CMS](https://img.shields.io/badge/Strapi-v4-4945FF.svg?style=flat-square&logo=strapi)](https://strapi.io/)
+
+---
+
+## 🌟 Overview
+
+In modern agriculture, early detection of plant diseases is critical for growing healthy crops and reducing yield losses. Traditional methods to identify plant diseases are often slow, subjective, and require expert agronomists, making them inaccessible to smallholder farmers. 
+
+**LeafInsight** is a full-stack, AI-driven mobile solution designed to identify diseases in vegetable crops — specifically **Potato**, **Tomato**, and **Bell Pepper (Capsicum)**. By analyzing leaf photographs using a custom **MobileNetV2** deep convolutional neural network, the app detects diseases with **95.5% accuracy**. Once classified, the app integrates with **OpenAI's GPT-4o** to generate real-time diagnostic blogs detailing the symptoms, causes, organic treatments, and care tips in both **English** and **Urdu**.
+
+---
+
+## 📱 Mobile App UI Showcase
+
+Here are some screenshots taken from the **LeafInsight React Native** mobile application showing registration, onboarding, camera scanning, analysis results, and generated agricultural advisory blogs:
+
+<p align="center">
+  <img src="screenshots/screenshot_22.jpeg" width="180" alt="Login Screen" /> &nbsp;
+  <img src="screenshots/screenshot_23.jpeg" width="180" alt="Signup Screen" /> &nbsp;
+  <img src="screenshots/screenshot_24.jpeg" width="180" alt="Explore Crops" /> &nbsp;
+  <img src="screenshots/screenshot_25.jpeg" width="180" alt="Camera Scan UI" /> &nbsp;
+  <img src="screenshots/screenshot_26.jpeg" width="180" alt="AI Diagnosis Result" />
+</p>
+
+<p align="center">
+  <img src="screenshots/screenshot_6.jpeg" width="180" alt="Diagnosis Detail 1" /> &nbsp;
+  <img src="screenshots/screenshot_7.jpeg" width="180" alt="Diagnosis Detail 2" /> &nbsp;
+  <img src="screenshots/screenshot_8.jpeg" width="180" alt="Diagnosis Detail 3" />
+</p>
+
+---
+
+## 📊 Technical Diagrams & Training Insights
+
+The project evaluated several architectures, including **MobileNetV2**, **VGG16**, **ResNet50**, **EfficientNetB0**, and **InceptionV2**. Below are the model parameters, network structures, and accuracy/loss curves obtained during final evaluation:
+
+### 1. Training Performance (Accuracy & Loss Curves)
+<p align="center">
+  <img src="screenshots/screenshot_11.png" width="480" alt="Training Accuracy and Loss Plot" />
+</p>
+
+### 2. Model Evaluation Metrics (Confusion Matrix & Classification Report)
+<p align="center">
+  <img src="screenshots/screenshot_27.png" width="450" alt="Confusion Matrix" /> &nbsp;
+  <img src="screenshots/screenshot_12.png" width="350" alt="Classification Report" />
+</p>
+
+### 3. System Architecture & Flow Diagrams
+<p align="center">
+  <img src="screenshots/screenshot_15.png" width="700" alt="System Flowchart" />
+</p>
+<p align="center">
+  <img src="screenshots/screenshot_16.png" width="700" alt="Detailed Pipeline Diagram" />
+</p>
+
+---
+
+## ✨ Key Features
+
+- **📸 Instant Smartphone Diagnostics**: Take a photo of a diseased leaf using the mobile camera or upload from gallery to receive an immediate diagnosis.
+- **⚡ 95.5% Accurate CNN**: Leverages a trained MobileNetV2 architecture, optimized specifically for fast CPU/mobile execution without sacrificing accuracy.
+- **🤖 Generative AI Treatment Plan**: Sends positive classifications to OpenAI GPT-4o to formulate a markdown blog containing:
+  - **Symptoms**: What to look out for on other leaves.
+  - **Causes**: Weather, soil, or biological triggers.
+  - **Treatment**: Chemical & organic solutions.
+  - **Care Tips**: Preventative steps for future crops.
+- **🗣️ Bilingual Support (Urdu & English)**: Supports Urdu queries and outputs. Translation mapping translates terms like `Potato_Early_blight` to local Urdu terminology (`آلو — آگ جلنے کی ابتدائی بیماری`).
+- **🛡️ Out-of-Distribution (OOD) Protection**: Built-in safety mechanisms in FastAPI. If the confidence level is below **90%** or the image contains non-plant objects, it responds with *"Picture cannot be identified"* to prevent false diagnostics.
+- **📦 Strapi CMS Integration**: Integrated Strapi admin dashboard to manage plant metadata, disease archives, and application news updates.
+
+---
+
+## 🛠️ Tech Stack
+
+### Mobile Frontend
+- **Framework**: React Native (v0.72)
+- **Language**: TypeScript
+- **State Management**: React Hooks & Context API
+- **Design Pattern**: Minimalist agricultural green theme with vector icon badges
+
+### Backend API
+- **Framework**: FastAPI (Python 3.10+)
+- **WSGI Server**: Uvicorn
+- **AI Integrations**: TensorFlow/Keras & OpenAI API (GPT-4o model)
+
+### Machine Learning Model
+- **Engine**: TensorFlow / Keras (Saved as `.keras` format)
+- **Base Architecture**: MobileNetV2
+- **Dataset**: Customized PlantVillage dataset including Potato, Tomato, and Bell Pepper leaves
+- **OOD Handling**: Custom threshold filtering (<90% confidence or "Unknown_Objects")
+
+### Content Management
+- **CMS**: Strapi CMS v4 (NoSQL/SQL database-backed)
+- **Purpose**: Manage agricultural blogs, explore section materials, and user archives
+
+---
+
+## 🦠 Crop & Disease Class Matrix
+
+LeafInsight classifies crop leaves into **8 distinct labels**:
+
+| Crop | Disease | Status / Translation (Urdu) |
+| :--- | :--- | :--- |
+| **Potato** | Early Blight | آگ جلنے کی ابتدائی بیماری |
+| **Potato** | Late Blight | آگ جلنے کی آخری بیماری |
+| **Potato** | Healthy | صحت مند |
+| **Tomato** | Mosaic Virus | موزیک وائرس |
+| **Tomato** | Healthy | صحت مند |
+| **Bell Pepper** | Bacterial Spot | بیکٹیریا کے دھبے |
+| **Bell Pepper** | Healthy | صحت مند |
+| **Any / Other** | Non-plant/Noise | Unknown Objects (Not Identified) |
+
+---
+
+## 🚀 Getting Started
+
+To run the full-stack LeafInsight application locally, follow the steps below:
+
+### 1. Backend Server Setup (FastAPI)
+1. Navigate to the FastAPI directory:
+   ```bash
+   cd FastAPI
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Create a `.env` file in the `FastAPI` directory:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key_here
+   API_TOKEN=my-secret-token
+   PORT=8000
+   ```
+5. Run the FastAPI development server:
+   ```bash
+   python main.py
+   ```
+
+---
+
+### 2. Strapi CMS Setup
+1. Navigate to the Strapi CMS directory:
+   ```bash
+   cd leafinsight-strapi-main
+   ```
+2. Install Node packages:
+   ```bash
+   npm install # or yarn install
+   ```
+3. Run the development server:
+   ```bash
+   npm run develop
+   ```
+4. Open your browser to `http://localhost:1337/admin` to set up your administrator credentials.
+
+---
+
+### 3. Mobile App Setup (React Native)
+1. Navigate to the mobile app directory:
+   ```bash
+   cd LeafInsightRN-main
+   ```
+2. Install npm packages:
+   ```bash
+   npm install # or yarn install
+   ```
+3. Start the Metro Bundler:
+   ```bash
+   npm start # or yarn start
+   ```
+4. Run on your platform of choice:
+   - **Android**: `npm run android`
+   - **iOS**: `npm run ios` (Requires macOS and CocoaPods setup)
+
+---
+
+## 📄 License
+
+This Final Year Project codebase is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👨‍💻 Project Team & Authors
+
+- **Anas Ahmed Qureshi** — [@AnasQ2003](https://github.com/AnasQ2003)
+- **Abdul Samad**
+- **Shalal Bakhtiar**
+
+*Final Year Project (FYP) Submission — BS Computer Science*
+
+---
+
+<div align="center">
+  <p>Built with ❤️ using <strong>React Native, FastAPI, TensorFlow & OpenAI</strong></p>
+
+  **⭐ If this research project was helpful, please star the repository!**
+</div>
