@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🌿 LeafInsight: Smart Detection of Vegetable Diseases using Deep Vision
 
 > An end-to-end, deep learning-powered mobile application that detects leaf diseases in vegetable crops (Potato, Tomato, and Bell Pepper) with a 95.5% accurate MobileNetV2 model, coupled with a FastAPI backend and GPT-4o Generative AI advice in English and Urdu.
@@ -9,6 +11,8 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-FF6F00.svg?style=flat-square&logo=tensorflow)](https://www.tensorflow.org/)
 [![OpenAI GPT-4o](https://img.shields.io/badge/OpenAI-GPT--4o-412991.svg?style=flat-square&logo=openai)](https://openai.com/)
 [![Strapi CMS](https://img.shields.io/badge/Strapi-v4-4945FF.svg?style=flat-square&logo=strapi)](https://strapi.io/)
+
+</div>
 
 ---
 
@@ -194,7 +198,7 @@ To run the full-stack LeafInsight application locally, follow the steps below:
 ```
 MIT License
 
-Copyright (c) LeafInsight---2026 AnasQ2003
+Copyright (c) LeafInsight --- 2026 AnasQ2003
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
