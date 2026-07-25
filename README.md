@@ -28,19 +28,24 @@ In modern agriculture, early detection of plant diseases is critical for growing
 
 Here are some screenshots taken from the **LeafInsight React Native** mobile application showing registration, onboarding, camera scanning, analysis results, and generated agricultural advisory blogs:
 
-<p align="center">
-  <img src="screenshots/screenshot_22.jpeg" width="180" alt="Login Screen" /> &nbsp;
-  <img src="screenshots/screenshot_23.jpeg" width="180" alt="Signup Screen" /> &nbsp;
-  <img src="screenshots/screenshot_24.jpeg" width="180" alt="Explore Crops" /> &nbsp;
-  <img src="screenshots/screenshot_25.jpeg" width="180" alt="Camera Scan UI" /> &nbsp;
-  <img src="screenshots/screenshot_26.jpeg" width="180" alt="AI Diagnosis Result" />
-</p>
-
-<p align="center">
-  <img src="screenshots/screenshot_6.jpeg" width="180" alt="Diagnosis Detail 1" /> &nbsp;
-  <img src="screenshots/screenshot_7.jpeg" width="180" alt="Diagnosis Detail 2" /> &nbsp;
-  <img src="screenshots/screenshot_8.jpeg" width="180" alt="Diagnosis Detail 3" />
-</p>
+<table align="center">
+  <tr>
+    <td align="center" width="50%"><img src="screenshots/screenshot_22.jpeg" width="100%" alt="Login Screen"/><br/><b>🔐 Login Screen</b></td>
+    <td align="center" width="50%"><img src="screenshots/screenshot_23.jpeg" width="100%" alt="Signup Screen"/><br/><b>📝 Signup Screen</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="screenshots/screenshot_24.jpeg" width="100%" alt="Explore Crops"/><br/><b>🌱 Explore Crops</b></td>
+    <td align="center" width="50%"><img src="screenshots/screenshot_25.jpeg" width="100%" alt="Camera Scan UI"/><br/><b>📸 Camera Scan UI</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="screenshots/screenshot_26.jpeg" width="100%" alt="AI Diagnosis Result"/><br/><b>🔬 AI Diagnosis Result</b></td>
+    <td align="center" width="50%"><img src="screenshots/screenshot_6.jpeg" width="100%" alt="Diagnosis Detail 1"/><br/><b>📋 Diagnosis Detail 1</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="screenshots/screenshot_7.jpeg" width="100%" alt="Diagnosis Detail 2"/><br/><b>📜 Diagnosis Detail 2</b></td>
+    <td align="center" width="50%"><img src="screenshots/screenshot_8.jpeg" width="100%" alt="Diagnosis Detail 3"/><br/><b>💡 Diagnosis Detail 3</b></td>
+  </tr>
+</table>
 
 ---
 
@@ -49,23 +54,23 @@ Here are some screenshots taken from the **LeafInsight React Native** mobile app
 The project evaluated several architectures, including **MobileNetV2**, **VGG16**, **ResNet50**, **EfficientNetB0**, and **InceptionV2**. Below are the model parameters, network structures, and accuracy/loss curves obtained during final evaluation:
 
 ### 1. Training Performance (Accuracy & Loss Curves)
-<p align="center">
-  <img src="screenshots/screenshot_11.png" width="480" alt="Training Accuracy and Loss Plot" />
-</p>
+<div align="center">
+  <img src="screenshots/screenshot_11.png" width="100%" alt="Training Accuracy and Loss Plot" />
+</div>
 
 ### 2. Model Evaluation Metrics (Confusion Matrix & Classification Report)
-<p align="center">
-  <img src="screenshots/screenshot_27.png" width="450" alt="Confusion Matrix" /> &nbsp;
-  <img src="screenshots/screenshot_12.png" width="350" alt="Classification Report" />
-</p>
+<div align="center">
+  <img src="screenshots/screenshot_27.png" width="100%" alt="Confusion Matrix" />
+  <br/><br/>
+  <img src="screenshots/screenshot_12.png" width="100%" alt="Classification Report" />
+</div>
 
 ### 3. System Architecture & Flow Diagrams
-<p align="center">
-  <img src="screenshots/screenshot_15.png" width="700" alt="System Flowchart" />
-</p>
-<p align="center">
-  <img src="screenshots/screenshot_16.png" width="700" alt="Detailed Pipeline Diagram" />
-</p>
+<div align="center">
+  <img src="screenshots/screenshot_15.png" width="100%" alt="System Flowchart" />
+  <br/><br/>
+  <img src="screenshots/screenshot_16.png" width="100%" alt="Detailed Pipeline Diagram" />
+</div>
 
 ---
 
